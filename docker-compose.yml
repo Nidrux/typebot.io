@@ -7,6 +7,7 @@ services:
   typebot-db:
     image: postgres:16
     restart: always
+    container_name: typebot-db
     volumes:
       - db-data:/var/lib/postgresql/data
     environment:
